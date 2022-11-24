@@ -1,7 +1,7 @@
 img/*
-__pycache__/*
-.ipynb_checkpoints/*
-heatmaps.py
-histograms.py
-sigmaExplore.py
-angleChange.py
+cpr_mc/__pycache__/*
+cpr_mc/.ipynb_checkpoints/*
+cpr_mc/heatmaps.py
+cpr_mc/histograms.py
+cpr_mc/sigmaExplore.py
+cpr_mc/angleChange.py
