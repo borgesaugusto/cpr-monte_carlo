@@ -1,0 +1,7 @@
+img/*
+__pycache__/*
+.ipynb_checkpoints/*
+heatmaps.py
+histograms.py
+sigmaExplore.py
+angleChange.py
