@@ -33,8 +33,7 @@ for t in trange[::100]:
     plt.scatter(np.cos(cells[1].post[t]), np.sin(cells[1].post[t]), s=1000, color="green")
 
     plt.plot([0, np.cos(cells[0].post[t])], [0, np.sin(cells[0].post[t])], ls='--', color="black")
-    plt.plot([0, np.cos(cells[1].post[t])], [
-        0, np.sin(cells[1].post[t])], ls='--', color="black")
+    plt.plot([0, np.cos(cells[1].post[t])], [0, np.sin(cells[1].post[t])], ls='--', color="black")
 
     plt.annotate(f"Time: {t} MCS", xy=(0.7, 0.05), xytext=(0.7, 0.05), textcoords='figure fraction')
     plt.xlim(-1.25, 1.25)
