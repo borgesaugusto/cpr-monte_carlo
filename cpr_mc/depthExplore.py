@@ -35,7 +35,7 @@ replicates = 10
 
 breaking_time = 10000
 
-s2Range = np.arange(0, 50, 5)
+s2Range = np.arange(0, 26, 5)
 for s2 in s2Range:
     angRes = []
     for rep in tqdm(range(0, replicates), desc="Running replicates"):
@@ -74,10 +74,10 @@ df['depth'] = s2Range
 df['mean'] = angleMean
 df['std'] = angleStd
 # two wells
-plt.plot(df['depth'], df['mean'] * 180 / np.pi, ls="--", color="#3D3A4B", label="Asymmetrical model")
+plt.plot(df['depth'], df['mean'] * 180 / np.pi, ls="--", color="blue", label="Asymmetrical model")
 plt.fill_between(df['depth'], df['mean'] * 180 / np.pi - df['std'] * 180 / np.pi,
-                 df['mean'] * 180 / np.pi + df['std'] * 180 / np.pi, alpha=0.2, color="#3D3A4B")
-
+                 df['mean'] * 180 / np.pi + df['std'] * 180 / np.pi, alpha=0.2, color="blue")
+# color="#3D3A4B"
 ##########################################################################################
 # Symmetrical model
 c1Minima = 0
@@ -128,11 +128,17 @@ df['depth'] = s2Range
 df['mean'] = angleMean
 df['std'] = angleStd
 
-plt.plot(df['depth'], df['mean'] * 180 / np.pi, ls="--", color="#B19994", label="Symmetrical model")
+plt.plot(df['depth'], df['mean'] * 180 / np.pi, ls="--", color="red", label="Symmetrical model")
 plt.fill_between(df['depth'], df['mean'] * 180 / np.pi - df['std'] * 180 / np.pi,
-                 df['mean'] * 180 / np.pi + df['std'] * 180 / np.pi, alpha=0.2, color="#B19994")
+                 df['mean'] * 180 / np.pi + df['std'] * 180 / np.pi, alpha=0.2, color="red")
+# color="#B19994"
 plt.ylabel("Final angle [º]")
 plt.ylim(0, 90)
 plt.xlabel("Depth of second well")
+
+plt.xticks([0, 5, 10, 15, 20, 25],
+           ["50:0", "50:5", "50:10", "50:15", "50:20", "50:25"])
 plt.legend()
-plt.savefig("../img/both.png", dpi=300)
+# plt.tight_layout()
+plt.xlim(0, 25)
+plt.savefig("../img/both.pdf", dpi=300)

@@ -47,9 +47,9 @@ for t in trange[::100]:
     plt.scatter(np.cos(c2Minima), np.sin(c2Minima), color="green", facecolors="none", ls="dotted", s=s2 * 20)
 
     plt.axis('off')
-    plt.savefig("img/movie/dummy/" + str(format(t, '05d')) + ".png", dpi=300)
+    plt.savefig("../img/movie/dummy/" + str(format(t, '05d')) + ".png", dpi=300)
     plt.close()
 
 status = "asym" if c1Minima != c2Minima else "sym"
-os.system(f"ffmpeg -framerate 30 -pattern_type glob -i 'img/movie/dummy/*.png' -c:v libx264"
+os.system(f"ffmpeg -framerate 30 -pattern_type glob -i '../img/movie/dummy/*.png' -c:v libx264"
           f" -pix_fmt yuv420p 'img/movie/{s1}_{s2}_{status}.mp4'")
