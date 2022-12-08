@@ -15,3 +15,7 @@ Osvaldo Chara<sup>2,6,7</sup> and Hernán López-Schier<sup>1,9,10</sup>
 8) equally contributing authors
 9) present address: Division of Science, New York University Abu Dhabi, Saadiyat Island, United Arab Emirates
 10) corresponding author: hl5251@nyu.edu
+
+This package was developed by **Augusto Borges** and **Osvaldo Chara**.  
+augusto.borges@helmholtz-muenchen.de (AB) and osvaldo.chara@nottingham.ac.uk (OC)  
+Twitter: [@borgesaugust](https://twitter.com/borgesaugust) (AB) and [@Osvaldo_Chara](https://twitter.com/Osvaldo_Chara) (OC)
