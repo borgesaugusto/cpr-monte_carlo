@@ -1,4 +1,5 @@
 ## Quantitative videomicroscopy reveals latent control of cell-pair rotations *in vivo*
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7417603.svg)](https://doi.org/10.5281/zenodo.7417603)
 
 Eva L. Kozak<sup>1,8</sup>, Jerónimo R. Miranda-Rodríguez<sup>1,8</sup>, 
 Augusto Borges<sup>1,2,3</sup>, Kai Dierkes<sup>4</sup>, Alessandro Mineo<sup>4</sup>, 
